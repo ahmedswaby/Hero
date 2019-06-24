@@ -44,18 +44,6 @@ $(function () {
 	});
 
 
-	// loading page fnction 
-
-	$(window).on('load', function () {
-		'use strict';
-
-
-		$('.loading-page').fadeOut(100, function () {
-			$(this).remove();
-		})
-	})
-});
-
 // CANVAS Functions
 
 
