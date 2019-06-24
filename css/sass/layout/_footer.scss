@@ -1,0 +1,39 @@
+/*Start Footer*/
+.footer {
+	background-color: #222;
+	color: #f6f6f6;
+	padding-top: $mainPadd - 40;
+	padding-bottom: $mainPadd - 40;
+
+	.copyright {
+		@media (max-width: 991px) {
+			text-align: center;
+			margin-bottom: $mainMargin;
+		}
+
+		a {
+			text-decoration: none;
+			color: #777;
+
+			&:hover {
+				color: #f6f6f6;
+			}
+		}
+	}
+
+	.footer-socialmedia {
+		text-align: right;
+
+		@media (max-width: 991px) {
+			text-align: center
+		}
+
+		i {
+			margin-right: $mainMargin;
+
+			@media (max-width: 991px) {
+				margin-right: $mainMargin - 10;
+			}
+		}
+	}
+}

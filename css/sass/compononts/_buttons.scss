@@ -1,0 +1,83 @@
+.main-button {
+	background-color: $buttonColor;
+	color: $fontColor-gray;
+	padding: 15px 43px;
+	border: 1px solid $buttonColor;
+	border-radius: 30px;
+	margin-bottom: $mainMargin + 30;
+	margin-right: $mainMargin - 5;
+	@include transition(all .5s ease-in-out);
+	&:focus {
+		outline: none;
+	}
+
+	&:hover {
+		@extend %second-button;
+
+	}
+
+	@media (max-width: 576px) {
+
+		margin-bottom: $mainMargin;
+	}
+
+}
+
+.second-button {
+	background-color: transparent;
+	color: $buttonColor;
+	@extend .main-button;
+
+
+	&:hover {
+		@extend %main-button;
+
+	}
+}
+
+%second-button {
+	background-color: transparent;
+	color: $buttonColor;
+
+}
+
+%main-button {
+	background-color: $buttonColor;
+	color: $fontColor-gray;
+
+}
+
+
+.third-button {
+
+	@extend .main-button;
+	padding: 7px 55px;
+
+
+	&:hover {
+		@extend %fourth-button;
+
+	}
+}
+
+%fourth-button {
+
+	@extend .second-button;
+	background-color: #222;
+	color: #f6f6f6;
+	padding: 7px 55px;
+
+}
+
+.man-button {
+	background-color: #f6f6f6;
+	color: $fontColor-gray;
+	padding: 15px 43px;
+	border: 1px solid $buttonColor;
+	border-radius: 30px;
+
+
+	@media (max-width: 991px) {
+		margin-bottom: $mainMargin;
+	}
+}

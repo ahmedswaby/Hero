@@ -1,0 +1,60 @@
+/*Start Navbar & Header */
+.navbar {
+	display: none;
+	.navbar-brand {
+		h2 {
+			color: $fontColor-gray;
+		}
+	}
+	.navbar-toggler {
+		outline: none
+	}
+}
+
+.header {
+
+	background: url(../img/menhd.jpg) no-repeat top center;
+	@include prefixer(background-size, cover, moz webkit o);
+	position: relative;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	.overlay {
+		@include overlay;
+		background-color: rgba(3, 3, 3, .3);
+
+	}
+
+	.myintro {
+		text-align: center;
+		color: $buttonColor;
+		position: sticky;
+		h1 {
+			font-size: 50px;
+			margin-bottom: $mainMargin;
+
+			@media (max-width: 576px) {
+				font-size: 30px;
+				margin: auto
+			}
+		}
+
+		p {
+			margin-bottom: 40px;
+			font-weight: bold;
+
+			@media (max-width: 576px) {
+				font-size: 14px;
+			}
+		}
+
+		button {
+			i {
+				margin-right: 5px;
+			}
+		}
+	}
+}

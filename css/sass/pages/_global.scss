@@ -1,0 +1,18 @@
+body {
+	overflow: hidden;
+  	font: {
+    	family: tahoma;
+    	size: 16px;
+	}
+}
+ul, ol {
+	
+	list-style: none;
+  	padding: 0;
+}
+p {
+	margin-bottom: 0;
+}
+.clearfix {
+	clear: both;
+}

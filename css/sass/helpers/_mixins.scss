@@ -1,0 +1,61 @@
+
+// mixin to add overlay 
+@mixin overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0
+}
+
+// mixin to add prefix
+
+@mixin prefixer ($prop, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $prop}: $value
+  }
+  #{$prop}: $value
+}
+
+// mixin to make animation prefixes
+
+@mixin keyF($animationNM) {
+
+  @keyframes #{$animationNM} {
+
+    @content;
+  }
+  @-webkit-keyframes #{$animationNM} {
+
+    @content;
+  }
+  @-moz-keyframes #{$animationNM} {
+
+    @content;
+  }
+}
+
+// mixin to make add opacity 
+
+@function safaRgba($color, $alpha: 1.0) {
+    @return unquote("rgba(#{red($color)}, #{green($color)}, #{blue($color)}, #{$alpha})");
+}
+
+
+@mixin opacity($value) {
+	zoom: 1;
+	$opacity-ie: $value * 100;
+	filter: alpha(opacity = $opacity-ie);
+	opacity: $value;
+}
+
+// mixin to add opacity for IE
+
+@mixin transition($transition...) {
+  -moz-transition: $transition;
+  -webkit-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+

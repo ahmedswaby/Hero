@@ -1,0 +1,437 @@
+body {
+  overflow: hidden;
+  font-family: tahoma;
+  font-size: 16px;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.main-button, .third-button, .second-button, .third-button:hover {
+  background-color: #FFF;
+  color: #777;
+  padding: 15px 43px;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+  margin-bottom: 50px;
+  margin-right: 15px;
+  -moz-transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.main-button:focus, .third-button:focus, .second-button:focus {
+  outline: none;
+}
+@media (max-width: 576px) {
+  .main-button, .third-button, .second-button, .third-button:hover {
+    margin-bottom: 20px;
+  }
+}
+
+.second-button, .third-button:hover {
+  background-color: transparent;
+  color: #FFF;
+}
+.main-button:hover, .third-button:hover, .second-button:hover {
+  background-color: transparent;
+  color: #FFF;
+}
+
+.second-button:hover, .third-button:hover {
+  background-color: #FFF;
+  color: #777;
+}
+
+.third-button {
+  padding: 7px 55px;
+}
+.third-button:hover {
+  background-color: #222;
+  color: #f6f6f6;
+  padding: 7px 55px;
+}
+
+.man-button {
+  background-color: #f6f6f6;
+  color: #777;
+  padding: 15px 43px;
+  border: 1px solid #FFF;
+  border-radius: 30px;
+}
+@media (max-width: 991px) {
+  .man-button {
+    margin-bottom: 20px;
+  }
+}
+
+/*Start Navbar & Header */
+.navbar {
+  display: none;
+}
+.navbar .navbar-brand h2 {
+  color: #777;
+}
+.navbar .navbar-toggler {
+  outline: none;
+}
+
+.header {
+  background: url(../img/menhd.jpg) no-repeat top center;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: rgba(3, 3, 3, 0.3);
+}
+.header .myintro {
+  text-align: center;
+  color: #FFF;
+  position: sticky;
+}
+.header .myintro h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+@media (max-width: 576px) {
+  .header .myintro h1 {
+    font-size: 30px;
+    margin: auto;
+  }
+}
+.header .myintro p {
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+@media (max-width: 576px) {
+  .header .myintro p {
+    font-size: 14px;
+  }
+}
+.header .myintro button i {
+  margin-right: 5px;
+}
+
+/*About Me section*/
+.about-me {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #777;
+}
+.about-me img {
+  width: 100%;
+  margin-bottom: 30px;
+  height: 300px;
+}
+@media (max-width: 991px) {
+  .about-me img {
+    height: auto;
+  }
+}
+.about-me .info {
+  margin-bottom: 30px;
+}
+.about-me .info h2 {
+  font-weight: bold;
+}
+.about-me .info p {
+  line-height: 1.7;
+  font-size: 15px;
+}
+.about-me .socialmedia-logos i {
+  margin-right: 10px;
+  margin-top: 20px;
+}
+.about-me .info-box {
+  background-color: #f6f6f6;
+  color: #777;
+  padding: 14px 25px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0px 0px 10px 3px #EEE;
+  -moz-box-shadow: 0px 0px 10px 3px #EEE;
+  -o-box-shadow: 0px 0px 10px 3px #EEE;
+  box-shadow: 0px 0px 10px 3px #EEE;
+}
+.about-me .info-box i {
+  float: left;
+  font-size: 40px;
+  margin: 4px auto;
+  margin-right: 17px;
+}
+
+/*Service section*/
+.service {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #f6f6f6;
+  color: #777;
+}
+.service .title {
+  margin-bottom: 10px;
+}
+.service .title h3 {
+  font-weight: bold;
+}
+.service .title p {
+  width: 60%;
+  margin: 0px auto 30px;
+}
+@media (max-width: 991px) {
+  .service .title p {
+    width: 100%;
+  }
+}
+.service .service-box {
+  padding: 0px 20px;
+}
+@media (max-width: 768px) {
+  .service .service-box {
+    margin-bottom: 20px;
+  }
+}
+.service .service-box i {
+  font-size: 75px;
+  margin-bottom: 20px;
+}
+.service .service-box h3 {
+  margin-bottom: 20px;
+}
+
+/* Project Section*/
+.projects .project-image img {
+  width: 100%;
+}
+.projects .project-image .top-left {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  font-size: 30px;
+}
+
+/* Hire me section*/
+.hire-me {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-color: #222;
+  color: #FFF;
+}
+.hire-me .main-button, .hire-me .second-button, .hire-me .third-button {
+  margin-bottom: 0px;
+}
+.hire-me .second-button, .hire-me .third-button:hover {
+  margin-bottom: 0px;
+}
+
+/*Contact Us Section*/
+.contact-us {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  /* form Styles*/
+  /*Info boxes style*/
+}
+.contact-us .sub-form {
+  color: #777;
+}
+.contact-us .sub-form h3 {
+  margin-bottom: 20px;
+}
+.contact-us .sub-form p {
+  margin: 20px auto 30px;
+  width: 60%;
+}
+@media (max-width: 991px) {
+  .contact-us .sub-form p {
+    width: 100%;
+  }
+}
+.contact-us .form input[type=text],
+.contact-us .form input[type=email] {
+  border: none;
+  width: 46%;
+  float: left;
+  margin-right: 4%;
+  padding: 10px 22px;
+  margin-bottom: 10px;
+  background-color: #f6f6f6;
+  border-radius: 21px;
+}
+.contact-us .form textarea {
+  width: 96%;
+  height: 150px;
+  padding: 10px 15px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  border: none;
+  margin-right: 30px;
+}
+.contact-us .form p {
+  text-align: left;
+  margin-top: 10px;
+}
+.contact-us .info-side {
+  background-color: #f6f6f6;
+  color: #777;
+  border: 1px solid #ccc;
+  margin-bottom: 28px;
+  border-radius: 10px;
+  text-align: left;
+  padding: 12px;
+  -moz-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.contact-us .info-side:hover {
+  background-color: #777;
+  color: #FFF;
+}
+.contact-us .info-side i {
+  float: left;
+  margin-right: 10px;
+  line-height: 1.4;
+}
+.contact-us .info-side p {
+  display: inline;
+}
+
+/*nice Scroll Edits*/
+.nicescroll-rails,
+.nicescroll-rails-vr {
+  background-color: #f6f6f6;
+}
+
+/*CANVAS styles*/
+canvas {
+  background-color: transparent;
+}
+
+/*Start Footer*/
+.footer {
+  background-color: #222;
+  color: #f6f6f6;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+@media (max-width: 991px) {
+  .footer .copyright {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+.footer .copyright a {
+  text-decoration: none;
+  color: #777;
+}
+.footer .copyright a:hover {
+  color: #f6f6f6;
+}
+.footer .footer-socialmedia {
+  text-align: right;
+}
+@media (max-width: 991px) {
+  .footer .footer-socialmedia {
+    text-align: center;
+  }
+}
+.footer .footer-socialmedia i {
+  margin-right: 20px;
+}
+@media (max-width: 991px) {
+  .footer .footer-socialmedia i {
+    margin-right: 10px;
+  }
+}
+
+/* Strat loading Page Styles*/
+.loading-page {
+  width: 100%;
+  height: 100%;
+  background-color: #222;
+  position: fixed;
+  z-index: 50;
+}
+.loading-page span {
+  display: inline-block;
+  top: 50%;
+  left: 43%;
+  margin: auto;
+  position: absolute;
+  height: 24px;
+  width: 10px;
+  background-color: #f6f6f6;
+  animation: waving 1.5s infinite ease-in-out;
+}
+.loading-page span:nth-of-type(2) {
+  left: 44%;
+  animation-delay: 0.2s;
+}
+@media (max-width: 991px) {
+  .loading-page span:nth-of-type(2) {
+    left: 46%;
+  }
+}
+.loading-page span:nth-of-type(3) {
+  left: 45%;
+  animation-delay: 0.4s;
+}
+@media (max-width: 991px) {
+  .loading-page span:nth-of-type(3) {
+    left: 49%;
+  }
+}
+.loading-page span:nth-of-type(4) {
+  left: 46%;
+  animation-delay: 0.6s;
+}
+@media (max-width: 991px) {
+  .loading-page span:nth-of-type(4) {
+    left: 52%;
+  }
+}
+.loading-page span:nth-of-type(5) {
+  left: 47%;
+  animation-delay: 0.8s;
+}
+@media (max-width: 991px) {
+  .loading-page span:nth-of-type(5) {
+    left: 55%;
+  }
+}
+
+/* Loading page Key Frames*/
+@keyframes waving {
+  0%, 50%, 100% {
+    height: 24px;
+    transform: translateY(0);
+  }
+  25% {
+    height: 50px;
+    transform: translateY(-10px);
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,229 @@
+
+ /*About Me section*/
+.about-me {
+	padding-top: $mainPadd;
+	padding-bottom: $mainPadd;
+	color: $fontColor-gray;
+
+	img {
+		width: 100%;
+		margin-bottom: $mainMargin + 10;
+		height: 300px;
+
+		@media (max-width: 991px) {
+			height: auto;
+		}
+	}
+
+	.info {
+		margin-bottom: $mainMargin + 10;
+
+		h2 {
+			font-weight: bold;
+		}
+
+		p {
+			line-height: 1.7;
+			font-size: 15px;
+		}
+	}
+
+	.socialmedia-logos {
+		i {
+			margin-right: $mainMargin - 10;
+			margin-top: $mainMargin;
+		}
+	}
+
+	.info-box {
+		background-color: #f6f6f6;
+		color: $fontColor-gray;
+		padding: 14px 25px;
+		margin-bottom: $mainMargin + 10;
+		@include prefixer(box-shadow, 0px 0px 10px 3px #EEE, webkit moz o);
+
+		i {
+			float: left;
+			font-size: 40px;
+			margin: 4px auto;
+			margin-right: $mainMargin - 3;
+		}
+	}
+}
+ /*Service section*/
+.service {
+	padding-top: $mainPadd;
+	padding-bottom: $mainPadd;
+	background-color: #f6f6f6;
+	color: $fontColor-gray;
+
+	.title {
+		margin-bottom: $mainMargin - 10;
+
+		h3 {
+			font-weight: bold;
+
+		}
+
+		p {
+			width: 60%;
+			margin: 0px auto $mainMargin + 10;
+
+			@media (max-width: 991px) {
+				width: 100%;
+			}
+		}
+	}
+
+	.service-box {
+		padding: 0px 20px;
+
+		@media (max-width: 768px) {
+			margin-bottom: $mainMargin;
+		}
+
+		i {
+			font-size: 75px;
+			margin-bottom: $mainMargin;
+		}
+
+		h3 {
+			margin-bottom: $mainMargin;
+		}
+	}
+
+}
+
+/* Project Section*/
+.projects {
+	.project-image {
+		img {
+			width: 100%;
+		}
+
+		.top-left {
+			position: absolute;
+			top: 10px;
+			left: 15px;
+			font-size: 30px;
+		}
+
+	}
+}
+
+/* Hire me section*/
+.hire-me {
+	padding-top: $mainPadd;
+	padding-bottom: $mainPadd;
+	background-color: #222;
+	color: $buttonColor;
+
+	.main-button {
+		margin-bottom: 0px;
+	}
+
+	.second-button {
+		margin-bottom: 0px;
+	}
+}
+/*Contact Us Section*/
+.contact-us {
+
+	padding-top: $mainPadd;
+	padding-bottom: $mainPadd;
+
+	.sub-form {
+
+		color: $fontColor-gray;
+
+		h3 {
+			margin-bottom: $mainMargin;
+
+		}
+
+		p {
+			margin: $mainMargin auto $mainMargin + 10;
+			width: 60%;
+
+			@media (max-width: 991px) {
+				width: 100%;
+			}
+		}
+	}
+	
+	/* form Styles*/
+
+	.form {
+
+		input[type="text"],
+		input[type="email"] {
+			border: none;
+			width: 46%;
+			float: left;
+			margin-right: 4%;
+			padding: 10px 22px;
+			margin-bottom: 10px;
+			background-color: #f6f6f6;
+			border-radius: 21px;
+
+		}
+
+		textarea {
+			width: 96%;
+			height: 150px;
+			padding: 10px 15px;
+			background-color: #f6f6f6;
+			border-radius: 15px;
+			border: none;
+			margin-right: 30px;
+		}
+
+		p {
+
+			text-align: left;
+			margin-top: 10px;
+
+		}
+	}
+	 /*Info boxes style*/
+	.info-side {
+		background-color: #f6f6f6;
+		color: $fontColor-gray;
+		border: 1px solid #ccc;
+		margin-bottom: $mainMargin + 8;
+		border-radius: 10px;
+		text-align: left;
+		padding: 12px;
+		@include transition(all 1s ease-in-out);
+
+		&:hover {
+			background-color: #777;
+			color: $buttonColor;
+		}
+
+		i {
+			float: left;
+			margin-right: 10px;
+			line-height: 1.4;
+		}
+
+		p {
+			display: inline;
+		}
+	}
+}
+
+/*nice Scroll Edits*/
+
+.nicescroll-rails,
+.nicescroll-rails-vr {
+	background-color: #f6f6f6
+}
+
+
+/*CANVAS styles*/
+
+canvas{
+    background-color: transparent;
+}
+
