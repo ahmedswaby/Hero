@@ -4,6 +4,7 @@ $(function () {
 
 	// nice scroll 
 
+	$('html, body').niceScroll();
 
 	// Make navbar fade in specific offset
 	$(window).scroll(function () {
@@ -42,7 +43,7 @@ $(function () {
 		$(this).parent('li').addClass('active').siblings().removeClass('active');
 	});
 
-
+});
 // CANVAS Functions
 
 
@@ -320,4 +321,4 @@ canvas.addEventListener('mousemove', function (e) {
 	mouse_ball.x = e.pageX;
 	mouse_ball.y = e.pageY;
 	// console.log(mouse_ball);
-});
+})
