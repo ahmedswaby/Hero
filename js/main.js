@@ -4,7 +4,6 @@ $(function () {
 
 	// nice scroll 
 
-	$('html, body').niceScroll();
 
 	// Make navbar fade in specific offset
 	$(window).scroll(function () {
